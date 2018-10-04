@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Light/ViewController.swift"
+            timestampString = "560304899.694368"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Light.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Light.ViewController"
+                  moduleName = "Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snakada/Documents/Projects/swift/AppDevelopmentSwift4-Student/1%20-%20Getting%20Started/8%20-%20Storyboards/Light/Light/ViewController.swift"
+                  timestampString = "560288482.837635"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Light.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Light.ViewController"
+                  moduleName = "Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snakada/Documents/Projects/swift/AppDevelopmentSwift4-Student/1%20-%20Getting%20Started/8%20-%20Storyboards/Light/Light/ViewController.swift"
+                  timestampString = "560288482.845854"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Light.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Light.ViewController&gt;"
+                  moduleName = "Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snakada/Documents/Projects/swift/AppDevelopmentSwift4-Student/1%20-%20Getting%20Started/8%20-%20Storyboards/Light/Light/ViewController.swift"
+                  timestampString = "560288482.848768"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Light.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Light.ViewController&gt;"
+                  moduleName = "Light"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snakada/Documents/Projects/swift/AppDevelopmentSwift4-Student/1%20-%20Getting%20Started/8%20-%20Storyboards/Light/Light/ViewController.swift"
+                  timestampString = "560288482.852132"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
