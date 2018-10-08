@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var sliderLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var gestureLabel: UILabel!
     
     var buttonCounter : Int = 0
     
@@ -65,9 +66,12 @@ class ViewController: UIViewController {
         output += "The slider is set to: \(slider.value)\n"
         
         if let text = textField.text {
-            output += "The text field: '\(text)'"
+            output += "The text field: '\(text)'\n"
         } else {
-            output += "The text field: ''"
+            output += "The text field: ''\n"
+        }
+        if let gestureText = gestureLabel.text {
+             output += gestureText
         }
         textView.text = output
     }
@@ -107,8 +111,9 @@ class ViewController: UIViewController {
     
     @IBAction func respondToTapGesture(_ sender: UITapGestureRecognizer) {
         let location = sender.location(in: view)
+        gestureLabel.text = "x: \(location.x)\ny: \(location.y)"
         print(location)
-        print(location.x, location.y)
+        updateTextView()
     }
     
 }
