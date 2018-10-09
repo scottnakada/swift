@@ -11,3 +11,6 @@
 
 ### AppDevelopmentSwift4-Student/2 - Introduction to UIKit/8 - Projects/SalsaTutorial
 	Title, 6-images with labels about my salsa hobby
+
+### AppDevelopmentSwift4-Student/2 - Introduction to UIKit/8 - Projects/TwoButtons
+	Add a set text and clear text button to set a label from a text field, or clear the label
