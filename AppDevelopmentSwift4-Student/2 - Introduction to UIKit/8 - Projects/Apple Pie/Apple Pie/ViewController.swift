@@ -33,7 +33,10 @@ class ViewController: UIViewController {
     /* Play a new round of the game */
     func newRound() {
         /* Get the next word from the front of the list of words */
-        let newWord = listOfWords.removeFirst()
+        //let newWord = listOfWords.removeFirst()
+        let wordIndex = Int.random(in: 0...listOfWords.count)
+        let newWord = listOfWords[wordIndex]
+        listOfWords.remove(at: wordIndex)
         /* instantiate a new Game as the current game */
         currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
         updateUI()
@@ -41,8 +44,14 @@ class ViewController: UIViewController {
     
     /* Update the user interface() */
     func updateUI() {
-        let debugStr = ""
-        // debugStr = "Word: \(currentGame.word), Moves Left: \(currentGame.incorrectMovesRemaining)"
+        var debugStr = ""
+        debugStr = "Word: \(currentGame.word), Moves Left: \(currentGame.incorrectMovesRemaining), \(listOfWords.count)"
+        var letters = [String]()
+        for letter in Array(currentGame.formattedWord) {
+            letters.append(String(letter))
+        }
+        let wordWithSpacing = letters.joined(separator: " ")
+        correctWordLabel.text = wordWithSpacing
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses), \(debugStr)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
