@@ -35,18 +35,28 @@ class ViewController: UIViewController {
         /* Get the next word from the front of the list of words */
         let newWord = listOfWords.removeFirst()
         /* instantiate a new Game as the current game */
-        currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed)
+        currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
         updateUI()
     }
     
     /* Update the user interface() */
     func updateUI() {
-        scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
+        let debugStr = ""
+        // debugStr = "Word: \(currentGame.word), Moves Left: \(currentGame.incorrectMovesRemaining)"
+        scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses), \(debugStr)"
         treeImageView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
+        /* Disable the key that was just pressed */
         sender.isEnabled = false
+        /* The the button title, to extract the letter code for the key pressed */
+        let letterString = sender.title(for: .normal)!
+        /* Convert the string to a char and lowercase for comparing letters */
+        let letter = Character(letterString.lowercased())
+        
+        currentGame.playerGuessed(letter: letter)
+        updateUI()
     }
     
 }
